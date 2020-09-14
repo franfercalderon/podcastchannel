@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Podcast Channel</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ca1d02ed6e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="body">
     <header class="header">
@@ -13,7 +14,10 @@
         </div>
         <nav class="nav">
             <input type="checkbox" class="checkbox">
-            <ul class="navlinks">
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="navul">
                 <li><a href="#episodes">EPISODIOS</a></li>
                 <li><a href="#about">NOSOTROS</a></li>
                 <li><a href="#guest">ENTREVISTAS</a></li>
@@ -24,23 +28,24 @@
     <main>
         <section class="title">
             <h1>Hello <span class="world">world</span> pale blue dot<span class="dot">.</span></h1>
-            <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+            <p class="mobilep">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
+            <p class="desktopp">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
             <button type="button" class="more">CONOCÉ MÁS</button>
         </section>
         <section class="episodes" id="episodes">
             <h2>Episodios</h2>
             <div class="episodescontainer">
-                <div class="chapter chapter1">
-                    <iframe src="https://open.spotify.com/embed-podcast/episode/3BHNpS9jt9icLb6aoK30Fz" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <div class="chaptercontainer chapter1">
+                    <iframe class="iframe" src="https://open.spotify.com/embed-podcast/episode/3BHNpS9jt9icLb6aoK30Fz" allow="encrypted-media"></iframe>
                 </div>
-                <div class="chapter chapter2">
-                    <iframe src="https://open.spotify.com/embed-podcast/episode/3qrnHQ2pcjEsbWfYdArJz1" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <div class="chaptercontainer chapter2">
+                    <iframe class="iframe" src="https://open.spotify.com/embed-podcast/episode/3qrnHQ2pcjEsbWfYdArJz1" allow="encrypted-media"></iframe>
                 </div>
-                <div class="chapter chapter3 btm">
-                    <iframe src="https://open.spotify.com/embed-podcast/episode/2VDkT7SA5wC5GBVy8uoqkH" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <div class="chaptercontainer chapter3">
+                    <iframe class="iframe" src="https://open.spotify.com/embed-podcast/episode/2VDkT7SA5wC5GBVy8uoqkH" allow="encrypted-media"></iframe>
                 </div>
-                <div class="chapter chapter4 btm">
-                    <iframe src="https://open.spotify.com/embed-podcast/episode/6jcf1jK3dNWVIhODz6NXwU" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <div class="chaptercontainer chapter4">
+                    <iframe class="iframe" src="https://open.spotify.com/embed-podcast/episode/6jcf1jK3dNWVIhODz6NXwU"  allow="encrypted-media"></iframe>
                 </div>
             </div>
         </section>
@@ -58,8 +63,8 @@
                 <img src="/images/assets/grace-hopper.png" alt="grace hopper" class="photo photo1">
                 <img src="/images/assets/Katie-Bouman.png" alt="katie bouman" class="photo photo2">
                 <img src="/images/assets/Margaret_Hamilton.png" alt="margaret hamilton" class="photo photo3">
-                <img src="/images/assets/An E.R.A.Univac 1103 computer in the 1950s.png" alt="computer in 1950"class="photo photo4">
-                <img src="/images/assets/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="computer operators" class="photo photo5">
+                <img src="/images/assets/E.R.A.Univac_1103_computer_in_1950s.png" alt="computer in 1950" class="photo photo4">
+                <img src="/images/assets/Computer_operators_with_an_Eniac.png" alt="computer operators" class="photo photo5">
                 <img src="/images/assets/susan-kare.png" alt="susan kare" class="photo photo6">
             </div>
         </section>
@@ -92,11 +97,11 @@
     <footer>
         <p>© 2019— Hello blue pale dot </p>
         <div class="mediacontainer">
-            <img src="/images/spotify-brands.svg" alt="spotify" class="media">
-            <img src="/images/instagram-brands.svg" alt="instrgram" class="media">
-            <img src="/images/twitter-brands.svg" alt="twitter" class="media">
-            <img src="/images/facebook-brands.svg" alt="facebook" class="media">
-            <img src="/images/telegram-brands.svg" alt="telegram" class="media">
+            <a href="https://open.spotify.com"><i class="fab fa-spotify"></i></a>
+            <a href="https://www.instagram.com/franfercalderon/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://telegram.org/"><i class="fab fa-telegram"></i></a>
         </div>
     </footer>
 </body>

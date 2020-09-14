@@ -1,17 +1,18 @@
 .title {
-    max-width: 1440px;
-    padding-left: 200px;
-    padding-top: 120px;
-    color: $text-color;
+    width: 100%;
+    padding: 29px 16px 0px 16px;
+    color: $textcolor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
 h1 {
-    font-family: $sans;
-    font-size: 64px;
-    font-weight: 300;
-    font-size: 64px;
+    font-family: $ibmsans;
+    font-size: 36px;
+    font-weight: 400;
     letter-spacing: 0;
+    padding-bottom: 16px;
 }
 
 h1 .world {
@@ -19,26 +20,27 @@ h1 .world {
 }
 
 h1 .dot {
-    color: #0000EC;
+    color: $listbackground;
 }
 
 .title p {
-    font-family: $mono;
-    max-width: 628px;
+    font-family: $ibmmono;
     margin-left: 0;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 36px;
 }
 
 .title button {
-    margin-top: 56px;
-    width: 226px;
-    height: 56px;
-    background-color: #00F3BB;
+    // margin-top: 56px;
+    width: 288px;
+    height: 48px;
+    background-color: $hovercolor;
     border: none;
-    font-family: $mono;
-    font-weight: 500;
-    font-size: 18px;
+    margin-bottom: 24px;
+    font-family: $ibmmono;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .title button:hover {
@@ -47,47 +49,51 @@ h1 .dot {
 }
 
 @media screen and (max-width: 768px) {
-    // .title {
-    //     width: 100%;
-    //     padding-left: 16px;
-    //     padding-top: 120px;
-    //     color: $text-color;
-    // }
-    
-    
-    // h1 {
-    //     font-family: $sans;
-    //     font-size: 64px;
-    //     font-weight: 300;
-    //     font-size: 64px;
-    //     letter-spacing: 0;
-    // }
-    
-    // h1 .world {
-    //     text-decoration: line-through;
-    // }
-    
-    // h1 .dot {
-    //     color: #0000EC;
-    // }
-    
-    // .title p {
-    //     font-family: $mono;
-    //     max-width: 628px;
-    //     margin-left: 0;
-    //     font-size: 16px;
-    //     line-height: 24px;
-    // }
-    
-    // .title button {
-    //     margin-top: 56px;
-    //     width: 226px;
-    //     height: 56px;
-    //     background-color: #00F3BB;
-    //     border: none;
-    //     font-family: $mono;
-    //     font-weight: 500;
-    //     font-size: 18px;
-    // }
-
+    .desktopp {
+        display: none;
+    }
 }
+
+@media screen and (min-width: 769px) {
+    .mobilep {
+        display: none;
+    }
+
+    .title {
+        display: inline-block;
+        max-width: 1440px;
+        padding-left: 200px;
+        padding-top: 120px;
+        color: $textcolor;
+    }
+    
+    h1 {
+        font-family: $ibmsans;
+        font-size: 64px;
+        font-weight: 300;
+        letter-spacing: 0;
+    }
+    
+    .title p {
+        font-family: $ibmmono;
+        max-width: 628px;
+        margin-left: 0;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 56px;
+    }
+
+    .title button {
+        width: 226px;
+        height: 56px;
+        background-color: $hovercolor;
+        border: none;
+        font-family: $ibmmono;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+
+
+
