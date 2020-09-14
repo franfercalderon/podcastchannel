@@ -1,0 +1,21 @@
+.guest h2 {
+    margin-left: 200px;
+    margin-top: 64px;
+    margin-bottom: 36px;
+    font-family: $sans;
+    font-weight: 300;
+    font-size: 48px;
+    color: $text-color;
+    letter-spacing: 0;
+}
+
+.photocontainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.photocontainer .photo {
+    margin: 0;
+    max-width: calc(100% / 3)
+}

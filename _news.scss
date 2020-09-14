@@ -1,0 +1,34 @@
+.news {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    height: 518px;
+    clip-path: polygon(0px 142.6px, 100% 0, 100% 518px, 0 518px);
+    padding: 213px 374px 0px 374px;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+}
+
+.news h2 {
+    text-align: center;
+    font-family: $sans;
+    font-weight: 300;
+    font-size: 48px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin-bottom: 36px;
+}
+
+.news button {
+    width: 345px;
+    height: 56px;
+    background-color: #00F3BB;
+    border: none;
+    font-family: $mono;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.news button:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: #FFFFFF;
+}

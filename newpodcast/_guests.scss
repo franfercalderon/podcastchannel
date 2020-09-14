@@ -1,0 +1,46 @@
+.guest h2 {
+    margin-left: 16px;
+    margin-top: 54px;
+    margin-bottom: 14px;
+    font-family: $ibmsans;
+    font-weight: 400;
+    font-size: 36px;
+    color: $textcolor;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+
+.photocontainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.photocontainer .photo {
+    margin: 0;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+    .guest h2 {
+        margin-left: 200px;
+        margin-top: 64px;
+        margin-bottom: 36px;
+        font-family: $ibmsans;
+        font-weight: 300;
+        font-size: 48px;
+        color: $textcolor;
+        letter-spacing: 0;
+    }
+    
+    .photocontainer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .photocontainer .photo {
+        margin: 0;
+        max-width: calc(100% / 3);
+    }
+}

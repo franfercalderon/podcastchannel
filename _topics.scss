@@ -1,0 +1,37 @@
+.topics h2 {
+    margin-left: 200px;
+    margin-top: 64px;
+    margin-bottom: 69px;
+    font-family: $sans;
+    font-weight: 300;
+    font-size: 48px;
+    color: $text-color;
+    letter-spacing: 0;
+}
+
+.topicscontainer {
+    display: flex;
+    padding: 0 220px;
+}
+
+.topicscontainer img {
+    max-width: 104px;
+    max-height: 104px;
+}
+
+.topicscontainer p {
+    max-width: 220px;
+    font-family: $sans;
+    font-weight: 500;
+    font-size: 24px;
+    color: $text-color;
+    text-align: center;
+    margin-top: 29px;
+    margin-bottom: 34px;
+}
+
+.topic {
+    display: flex;
+    flex-direction: column;
+}
+

@@ -1,0 +1,42 @@
+.about {
+    position: relative;
+    display: flex;
+    color: $text-color;
+    padding-left: 200px;
+    padding-right: 256px;
+}
+
+.about img {
+    // position: absolute;
+    max-width: 457.6px;
+    max-height: 660px;
+    margin-top: -168.6px;
+}
+
+.textcontainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20.4px;
+    margin: 0;
+    text-align: left;
+    width: 464px; 
+}
+
+.about h2 {
+    font-family: $sans;
+    font-weight: 300;
+    font-size: 48px;
+    margin-bottom: 24px;
+    margin-left: 0;
+}
+
+.about p {
+    font-family: $mono;
+    font-size: 16px;
+    letter-spacing: 0;  
+    line-height: 24px;
+}
+
+.textcontainer :nth-child(2) {
+    margin-bottom: 10px;
+}

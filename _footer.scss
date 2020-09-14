@@ -1,0 +1,28 @@
+footer {
+    margin: 0;
+    padding: 0 100px 0 100px;
+    width: 100%;
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    font-family: $mono;
+    font-size: 16px;
+    color: $text-color;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+
+.mediacontainer {
+    margin: 0;
+    display: flex;
+}
+
+.mediacontainer img {
+    width: 18px;
+    margin-left: 36px;
+}

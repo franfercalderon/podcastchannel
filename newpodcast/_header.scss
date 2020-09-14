@@ -1,0 +1,184 @@
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 44px;
+    padding-left: 16px;
+    padding-right: 19px;
+    font-family: $ibmmono;
+}
+
+.logo {
+    width: 24px;
+    height: 24px;
+}
+
+.nav ul {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 232px;
+    top: 44px;
+    left: 0;
+    padding-top: 16px;
+    padding-left: 16px;
+    overflow: hidden;
+    list-style: none;
+    background-color: $listbackground;
+    // transform: translateY(100%);
+    // transition: transform 1s ease-in-out;
+}
+
+.nav ul li {
+    position: relative;
+    padding-bottom: 24px;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.nav ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nav .checkbox:checked ~ ul {
+    display: block;
+    top: 44px;
+    width: 100%;
+    height: 224px;
+    // transform: translateY(0%);
+    // transition: transform 1s ease-in-out;
+}
+
+.nav input {
+    position: absolute;
+    display: block;
+    right: 16px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.nav span {
+    position: relative;
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: #000000;
+    margin-bottom: 3px;
+    z-index: 1;
+    transform-origin: 3px 0px;
+    transition: transform 0.5s ease,
+    opacity 0.55s ease;
+}
+
+.nav span:first-child {
+    transform-origin: 0% 0%;
+}
+.nav span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+.nav input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(2px, 0px);
+}
+.nav input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+.nav input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(1px, 2px);
+}
+
+@media screen and (min-width: 769px) {
+    header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        background-color: unset;
+        padding-left: 100px;
+        padding-right: 100px;
+        font-family: $ibmmono;
+    }
+    
+    .logo img{
+        position: absolute;
+        top: 22px;
+        width: 36px;
+        height: 36px;
+    }
+    
+    .nav ul {
+        position: relative;
+        display: flex;
+        height: auto;
+        top: 0;
+        left: 0;
+        padding: 0;
+        overflow: hidden;
+        list-style: none;
+        background-color: unset;
+    }
+    
+    .nav ul li {
+        position: relative;
+        display: inline-block;
+        top: 0;
+        padding-bottom: 0px;
+        margin-left: 48px;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 28px;
+        font-weight: 400;
+    }
+    
+    .nav ul li a{
+        position: relative;
+        text-decoration: none;
+        color: $textcolor;
+    }
+    
+    .nav input {
+        position: absolute;
+        display: block;
+        right: 16px;
+        top: 10px;
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+        z-index: 2;
+    }
+
+    header .nav ul li a:hover {
+        color: $hovercolor;
+        font-weight: 500;
+        text-decoration: line-through;
+    } 
+    
+    header .nav ul li a:active {
+        color: $activecolor;
+        font-weight: 400;
+        text-decoration: line-through;
+    } 
+
+    header .nav input {
+      display: none;
+    }
+
+    header .nav span {
+      display: none;
+    }
+}
+
+
